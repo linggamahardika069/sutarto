@@ -3,42 +3,84 @@
     "name": "CoolFanSG",
     "url": "https://coolfan-sg.pages.dev/",
     "desc": "Kipas DC 250mm 12V untuk warga Singapura, lengkap dengan cek colokan, voltase, dan speed controller. Supaya tidak salah beli lalu bengong di depan stopkontak.",
-    "tags": ["Kipas", "Singapura", "EN", "SGD"],
+    "tags": [
+      "Kipas",
+      "Singapura",
+      "EN",
+      "SGD"
+    ],
     "added": "2026-10-01"
   },
   {
     "name": "Arrière-Garde",
     "url": "https://arriere-garde.pages.dev/",
     "desc": "Panduan tas motor hemat (saddle bag, tas anti air, top-case) untuk pengendara di Prancis. Harga dalam euro, tulisan dalam bahasa Prancis, bawelnya tetap universal.",
-    "tags": ["Tas Motor", "Prancis", "FR", "EUR"],
+    "tags": [
+      "Tas Motor",
+      "Prancis",
+      "FR",
+      "EUR"
+    ],
     "added": "2026-10-02"
   },
   {
     "name": "Rasenpilot",
     "url": "https://rasenpilot.pages.dev/",
     "desc": "Mesin pemotong rumput, robot pemotong, dan trimmer untuk pembeli Jerman, diurutkan dari yang paling sering dipesan. Rumput boleh liar, rekomendasinya jangan.",
-    "tags": ["Taman", "Jerman", "DE", "EUR"],
+    "tags": [
+      "Taman",
+      "Jerman",
+      "DE",
+      "EUR"
+    ],
     "added": "2026-10-03"
   },
   {
     "name": "Aiyo Breeze",
     "url": "https://aiyobreeze.pages.dev/",
     "desc": "Kipas meja, tower, clip-on, sampai kipas leher yang benar-benar dipesan orang Singapura, diurutkan dari pesanan terbaru. Namanya Aiyo karena begitulah reaksi orang saat cuaca Singapura mulai menggila.",
-    "tags": ["Kipas", "Singapura", "EN", "SGD"],
+    "tags": [
+      "Kipas",
+      "Singapura",
+      "EN",
+      "SGD"
+    ],
     "added": "2026-10-05"
   },
   {
     "name": "LazyClean",
     "url": "https://lazyclean.pages.dev/",
     "desc": "Robot vacuum yang bisa dikirim ke Amerika Serikat. Remah-remah biar jadi urusan robot, Anda fokus ke rapat (atau rebahan, saya tidak menghakimi).",
-    "tags": ["Robot Vacuum", "Amerika Serikat", "EN", "USD"],
+    "tags": [
+      "Robot Vacuum",
+      "Amerika Serikat",
+      "EN",
+      "USD"
+    ],
     "added": "2026-10-07"
   },
   {
     "name": "Hands Down Watches",
     "url": "https://handsdownwatches.pages.dev/",
     "desc": "Jam tangan wanita di bawah $50 untuk pembeli Amerika, dari gaya dainty, smart, dressy, sampai sporty. Tampil rapi tanpa bikin saldo ikut jam lembur.",
-    "tags": ["Jam Tangan Wanita", "Amerika Serikat", "EN", "USD"],
+    "tags": [
+      "Jam Tangan Wanita",
+      "Amerika Serikat",
+      "EN",
+      "USD"
+    ],
     "added": "2026-10-09"
+  },
+  {
+    "name": "Cetak Bpjs",
+    "url": "https://cetak-bpjs.pages.dev/",
+    "desc": "Generator Kartu by Soenug, hanya digunakan untuk keperluan pribadi, tidak untuk disalahgunakan. Hasil cetak berupa file PDF",
+    "tags": [
+      "Generator Kartu BPJS",
+      "Indonesia",
+      "ID",
+      "IDR"
+    ],
+    "added": "2026-10-10"
   }
 ]
