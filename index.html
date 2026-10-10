@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sutarto Nugroho | Portofolio Minisite</title>
+  <meta name="description" content="Portofolio Sutarto Nugroho: kumpulan minisite afiliasi yang dibangun di GitHub, Cloudflare Pages, dan Supabase.">
+  <meta property="og:title" content="Sutarto Nugroho | Portofolio Minisite">
+  <meta property="og:description" content="Kumpulan minisite afiliasi buatan Sutarto Nugroho, lengkap dengan tautan dan tangkapan layar.">
+  <meta property="og:image" content="assets/sutarto.jpg">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23c2410c'/%3E%3Ctext x='50' y='68' font-size='56' font-family='Georgia,serif' font-weight='700' text-anchor='middle' fill='%23fff7ed'%3ESN%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="#top" aria-label="Sutarto Nugroho">SN<span>.</span></a>
+    <nav>
+      <a href="#minisite">Minisite</a>
+      <a href="#cara">Cara tambah</a>
+      <a class="btn btn-sm" href="mailto:zsutarto@gmail.com">Kontak</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-text">
+        <p class="eyebrow">Portofolio minisite</p>
+        <h1>Sutarto Nugroho</h1>
+        <p class="lead">Membangun minisite afiliasi: satu niche, satu situs, satu pasar. Halaman ini adalah buku alamat saya, supaya saya tidak perlu menggali riwayat browser jam 2 pagi demi mencari "tadi itu domainnya apa ya".</p>
+        <div class="hero-actions">
+          <a class="btn" href="#minisite">Lihat semua minisite</a>
+          <a class="btn btn-ghost" href="mailto:zsutarto@gmail.com">zsutarto@gmail.com</a>
+        </div>
+        <dl class="stats">
+          <div><dt id="stat-count">0</dt><dd>minisite online</dd></div>
+          <div><dt id="stat-markets">0</dt><dd>pasar negara</dd></div>
+          <div><dt>3</dt><dd>alat andalan: GitHub, Cloudflare, Supabase</dd></div>
+        </dl>
+      </div>
+      <figure class="portrait">
+        <img src="assets/sutarto.jpg" alt="Foto Sutarto Nugroho" width="800" height="1000" fetchpriority="high">
+      </figure>
+    </section>
+
+    <section id="minisite" class="section">
+      <div class="section-head">
+        <h2>Semua minisite</h2>
+        <p>Klik kartu untuk membuka situsnya. Tombol salin ada di pojok kalau cuma butuh alamatnya.</p>
+      </div>
+      <div class="tools">
+        <input id="search" type="search" placeholder="Cari nama, niche, atau negara..." aria-label="Cari minisite">
+        <div id="chips" class="chips" role="group" aria-label="Filter negara"></div>
+      </div>
+      <div id="grid" class="grid" aria-live="polite"></div>
+      <p id="empty" class="empty" hidden>Tidak ada yang cocok. Mungkin minisite itu memang belum dibuat. Jadi PR berikutnya.</p>
+    </section>
+
+    <section id="cara" class="section how">
+      <div class="section-head">
+        <h2>Cara tambah minisite baru</h2>
+        <p>Dua jalur. Pilih sesuai mood dan sinyal.</p>
+      </div>
+      <div class="how-grid">
+        <article class="card-plain">
+          <h3>Jalur cepat: satu perintah</h3>
+          <ol>
+            <li>Buka terminal di folder portofolio ini.</li>
+            <li>Jalankan <code>node add-minisite.mjs https://nama-situs.pages.dev</code></li>
+            <li>Skrip akan mengambil judul dan deskripsi situs, lalu menulisnya ke <code>projects.json</code>.</li>
+            <li>Rapikan teks deskripsinya kalau perlu, lalu <code>git add . &amp;&amp; git commit -m "tambah minisite" &amp;&amp; git push</code></li>
+          </ol>
+        </article>
+        <article class="card-plain">
+          <h3>Jalur santai: edit lewat browser</h3>
+          <ol>
+            <li>Buka repo portofolio di GitHub, klik <code>projects.json</code>, lalu ikon pensil.</li>
+            <li>Salin satu blok <code>{ ... }</code> yang sudah ada, tempel di bawahnya, jangan lupa koma.</li>
+            <li>Ganti <code>name</code>, <code>url</code>, <code>desc</code>, <code>tags</code>, <code>added</code>.</li>
+            <li>Klik <b>Commit changes</b>. Cloudflare Pages otomatis menayangkan ulang dalam sekitar satu menit.</li>
+          </ol>
+        </article>
+      </div>
+      <p class="note">Screenshot dibuat otomatis dari URL. Mau gambar tetap? Taruh file di <code>assets/shots/</code> lalu isi <code>"screenshot": "assets/shots/nama.jpg"</code> di kartunya.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Sutarto Nugroho. Dibangun dengan HTML polos, karena tidak semua hal perlu framework.</p>
+    <p><a href="mailto:zsutarto@gmail.com">zsutarto@gmail.com</a></p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
